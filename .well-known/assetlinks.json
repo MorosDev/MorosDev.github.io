@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.moros.onix",
+      "sha256_cert_fingerprints": [
+        "90:A1:B2:A5:24:84:76:E9:A4:F8:37:0B:CC:1F:37:ED:DE:59:4B:09:B4:6F:73:0E:FC:F7:25:8E:58:3F:0A:80"
+      ]
+    }
+  }
+]
