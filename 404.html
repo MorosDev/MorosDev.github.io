@@ -18,5 +18,9 @@
   <div class="marca">ÓNIX</div>
   <p>Aquí solo viven los links de Ónix.</p>
 </div>
+<script>
+  // Links nuevos (/c/<id>, /o/<código>) que llegaron aquí: se mandan a la casa nueva de Ónix.
+  if (/^\/(c|o)\/[A-Za-z0-9_-]{6,}\/?$/.test(location.pathname)) location.replace('https://onixmusic.pages.dev' + location.pathname);
+</script>
 </body>
 </html>
