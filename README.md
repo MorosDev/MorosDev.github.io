@@ -8,6 +8,8 @@ solo al subir a `main`) y también en `morosdev.github.io` (GitHub Pages: ahí s
   su tarjeta (og:*) para WhatsApp.
 - `/o/<código>`: canción OCULTA. El código es el id revuelto (`desocultar` en `lib/onix.js`, igual que en la app).
   La página y la tarjeta (`oculta.jpg`) no dicen cuál es.
+- `/p/<código>`: PLAYLIST compartida. La app la sube con `POST /api/playlist` (se guarda en Cloudflare KV, variable
+  `PLAYLISTS` = espacio `onix-playlists`) y la lee con `GET /api/p/<código>`. `lib/playlists.js`. Oculta = página misteriosa.
 - `lib/onix.js`: lo compartido (páginas, oEmbed, código de las ocultas).
 - `404.html`: en GitHub Pages manda `/c/<id>` y `/o/<código>` a onixmusic.pages.dev.
 
